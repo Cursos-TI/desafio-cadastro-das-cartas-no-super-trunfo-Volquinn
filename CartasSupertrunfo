@@ -56,6 +56,12 @@ int main() {
         printf("Digite o numero de pontos turisticos:\n");
         scanf("%d", &numeros);
 
+
+
         return 0;
+        
+
+
+
 
 }
