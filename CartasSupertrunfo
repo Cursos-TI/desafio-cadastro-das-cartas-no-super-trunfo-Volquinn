@@ -3,63 +3,101 @@
 
 int main() {
 
-    //Carta:1
+        //Carta1
 
-        int populacao, numeros; //Numero de pontos turisticos/Numero de habitantes da ciade
-        int area, pib;  //Numero da area km²
-        char codigo, cidade[20];    //Codigo da cidade e nome
-        char estado;
+        int populacao1, numeros1; //Numero de pontos turisticos/Numero de habitantes da ciade
+        float area1, pib1;  //Numero da area km²
+        float Densidade1, PIBperCapita1; 
+        char codigo1, cidade1[20];    //Codigo da cidade e nome
+        char estado1;
+        
+        //Carta2
 
-        printf("Carta 1:\n");
+        int populacao2, numeros2; //Numero de pontos turisticos/Numero de habitantes da ciade
+        float area2, pib2;  //Numero da area km²
+        float Densidade2, PIBperCapita2; 
+        char codigo2, cidade2[20];    //Codigo da cidade e nome
+        char estado2;
+
+
+        //------------------------------Carta1------------------------------------
+
+
+        printf("*** Carta 1 ***:\n");
         printf("Digite a letra do estado:\n");
-        scanf("%s", &estado);
+        scanf("%s", &estado1);
 
         printf("Digite o numero de 1 a 9:\n");
-        scanf("%2d", &codigo);
+        scanf("%s", &codigo1);
 
         printf("Digite o nome da cidade:\n");
-        scanf("%s", &cidade);
+        scanf("%s", cidade1);
 
         printf("Digite a populacao da cidade:\n");
-        scanf("%d", &populacao);
+        scanf("%d", &populacao1);
 
         printf("Digite a area em km²:\n");
-        scanf("%d", &area);
+        scanf("%f", &area1);
 
         printf("Digite o pib:\n");
-        scanf("%d", &pib);
+        scanf("%f", &pib1);
 
         printf("Digite o numeros de pontos turisticos:\n");
-        scanf("%d", &numeros);
+        scanf("%d", &numeros1);
 
-        ////////////////////////////////////////Carta2
+        //Calculando os valores
 
-        printf("Carta 2:\n");
+        Densidade1 = populacao1 / area1;
+        PIBperCapita1 = pib1 / populacao1;
+
+        // Exibindo os resultados
+        
+        printf("\n--- Informacoes calculadas---\n");
+        printf("CARTA 1:\n");
+        printf("Densidade Populacional: %.2f hab/km²\n", Densidade1);
+        printf("PIB per Capita: R$ %.2f\n", PIBperCapita1);
+
+
+        //--------------------------------Carta2---------------------------------
+
+
+        printf("*** Carta 2 ***:\n");
         printf("Digite a letra do Estado:\n");
-        scanf("%s", &estado);
+        scanf("%s", &estado2);
 
         printf("Digite o numero de 1 a 9:\n");
-        scanf("%2d", &codigo);
+        scanf("%s", &codigo2);
 
         printf("Digite o nome da cidade:\n");
-        scanf("%s", &cidade);
+        scanf("%s", &cidade2);
 
         printf("Digite a populacao da cidade:\n");
-        scanf("%d", &populacao);
+        scanf("%d", &populacao2);
 
         printf("Digite a area em km²:\n");
-        scanf("%d", &area);
+        scanf("%f", &area2);
 
         printf("Digite o pib:\n");
-        scanf("%d", &pib);
+        scanf("%f", &pib2);
 
         printf("Digite o numero de pontos turisticos:\n");
-        scanf("%d", &numeros);
+        scanf("%d", &numeros2);
 
+        //Calculando os valores
 
+        Densidade2 = populacao2 / area2;
+        PIBperCapita2 = pib2 / populacao2;
+
+        // Exibindo os resultados
+        
+        printf("\n--- Informacoes calculadas---\n");
+        printf("CARTA2:\n");
+        printf("Densidade Populacional: %.2f hab/km²\n", Densidade2);
+        printf("PIB per Capita: R$ %.2f\n", PIBperCapita2);
 
         return 0;
-        
+
+
 
 
 
